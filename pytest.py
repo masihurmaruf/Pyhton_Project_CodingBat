@@ -1,5 +1,6 @@
+#CODINGBAT LOGIC 1 PROBLEMS
+
 #function definition for ciger_party
-from _ast import Add
 def ciger_party(num, is_weekend):
     if is_weekend:
         if num>=40:
@@ -115,22 +116,104 @@ in1to10(5, False)
 in1to10(11, False)
 in1to10(11, True)
         
+
+#defining function squirrel_play
+def squirrel_play(temp, is_summer):
+    if is_summer:
+        if temp >=60 and temp <=100:
+            print("true")
+            return True
+        else:
+            print("false")
+            return False
+    elif temp >= 60 and temp <=90:
+        print("true")
+        return True
+    else:
+        print("false")
+        return False
+        
+        
+#calling function squirrel_play
+squirrel_play(70, False)
+squirrel_play(95, False)
+squirrel_play(95, True)        
+        
+        
+#defining function alarm_clock
+def alarm_clock(day, vacation):
+    if vacation:
+        if day == 0 or day == 6:
+            print("off")
+            return "off"
+        else:
+            print("10:00")
+            return "10:00"
+    elif day == 0 or day == 6:
+        print("10:00")
+        return "10:00"
+    else:
+        print("7:00")
+        return "7:00"        
         
         
         
+#calling function alarm_clock       
+alarm_clock(1, False)
+alarm_clock(5, False)
+alarm_clock(0, False)
         
         
-        
-        
-        
-        
-               
+#defining function near_ten
+def near_ten(num):
+    if num%10 == 1 or num%10 == 2 or num%10 == 8 or num%10 == 9 or num%10 == 0:
+        print("true")
+        return True
+    else:
+        print("false")
+        return False
+    
+    
+#calling function near_ten    
+near_ten(12)
+near_ten(17)
+near_ten(19)
+    
+            
+#CODINGBAT WARMUP 1
+
+#defining function sleep_in
+def sleep_in(weekday, vacation):
+    if vacation or not weekday:
+        print("true")
+        return True
+    else:
+        print("false")
+        return False
+                 
+    
+    
+#calling function sleep_in    
+sleep_in(False, False)
+sleep_in(True, False)
+sleep_in(False, True)     
+    
+#defining function diff21
+def diff21(n):
+    if n> 21:
+        return (abs(n-21)*2)
+    else:
+        return abs(n-21)
+
+    
+#defining function near   
     
     
     
     
     
     
+        
        
     
     
